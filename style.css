@@ -43,7 +43,9 @@ body {
 }
 
 .container {
-    padding: 0 20px;
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .hero__image__container {
@@ -64,6 +66,22 @@ body {
     color: #1d3557;
 }
 
+.food_card__description {
+    padding: 15px;
+}
+
+.food__card {
+    background-color: #f9f9f9;
+}
+.food__card__image__container {
+    width: 100%;
+}
+
+.food__image {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
+
 @media (min-width: 768px) {
     .navbar {
         justify-content: space-between;
@@ -79,6 +97,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
     .navbar__brand {
         width: 120px;
     }
@@ -86,5 +107,13 @@ body {
         padding: 15px;
         font-size: 15px;
     }
+    .hero__description {
+        width: 100%;
+    }
+    .hero__text {
+        font-size: 48px;
+    }
 }
+
+
 
